@@ -18,7 +18,7 @@ contains two functions :
 | Parameter name  | Info  | Default value | Example value |
 | ------------ |:---------------:|:-----:|----------|
 | element      | A string with the class/id name of the html element to which we want to attach the overlay  | - |`'.element'` or `'#element'`|
-| duration     | Transition duration of the overlay in microseconds | 400  | `1000`,`1200`, etc|
+| duration     | Transition duration of the overlay in microseconds | `400`  | `1000`,`1200`, etc|
 | background | Background color of the overlay      | `rgba(0, 0, 0, 0.600)` |`red`,`#000`,`rgba(200,200,200,0.4)` or any other color value|
                 
 ----
