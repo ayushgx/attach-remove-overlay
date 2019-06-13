@@ -6,7 +6,7 @@
     * passed element must have z-index specified to fully prevent any abnormal behaviours
     * but works fine without specifing z-index till now... 
 */
-function attach_overlay_to(element, duration, background = 'rgba(0, 0, 0, 0.600)') {
+function attach_overlay_to(element, duration=400, background = 'rgba(0, 0, 0, 0.600)') {
     element_z_index = $(element).css("z-index");
     $(element).wrap("<div id='overlay'></div>");
 
@@ -26,7 +26,7 @@ function attach_overlay_to(element, duration, background = 'rgba(0, 0, 0, 0.600)
    ===================
     * with animation duration and element input
 */
-function remove_overlay_from(element, duration) {
+function remove_overlay_from(element, duration=400) {
     $('#overlay').fadeOut(duration);
     setTimeout(function () {
         $(element).unwrap('#overlay')
