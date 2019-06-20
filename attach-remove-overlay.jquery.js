@@ -31,5 +31,4 @@ function remove_overlay_from(element, duration=400) {
     setTimeout(function () {
         $(element).unwrap('#overlay')
     }, duration);
-    $('.content').css('overflow', 'auto')
 }
